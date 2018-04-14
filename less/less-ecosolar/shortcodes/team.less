@@ -1,0 +1,93 @@
+/*
+ * Shortcode: team.less
+ * -----------------------------------------------
+*/
+
+ .team-member {
+  overflow: hidden;
+  position: relative;
+  .transition(all 0.5s linear 0s);
+
+  &:hover::before {
+    background: transparent;
+    content: "";
+    height: 100%;
+    position: static;
+    width: 90%;
+  }
+
+  .member-info {
+    bottom: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    .transition(all 0.4s linear 0s);
+
+    .member-biography {
+      opacity: 1;
+      position: relative;
+      right: auto;
+      left: auto;
+      top: auto;
+      bottom: auto;
+      text-align: center;
+      z-index: 3;
+    }
+  }
+  &:hover .member-info {
+      bottom: 0;
+  }
+}
+.team-block {
+    background: rgba(0, 0, 0, 0.7);
+  /* margin: 0 auto 30px; */
+  .team-thumb {
+    overflow: hidden;
+    position: relative;
+    /* border: 2px solid @gray-lighter; */
+    .team-overlay {
+      background: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      padding: 60px 20px 0 30px;
+      position: absolute;
+      top: 1px;
+      transition: all 500ms ease 0s;
+      width: 100%;
+      opacity: 0;
+    }
+  }
+  .team-bottom-part {
+    background: @gray-lighter none repeat scroll 0 0;
+    margin-top: 6px;
+    padding: 10px 16px 12px 30px;
+  }
+  .title small {
+  color: @white-f1;
+  }
+}
+.team-block:hover .team-overlay {
+  /* top: 0; */
+  opacity: 1;
+}
+.team-block > .info-new {
+  border: 2px solid @gray-lighter;
+} 
+.team-block > .info-new h4 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+.team-block:hover .info-new h4 {
+  color: @white-base;
+}
+.team-block:hover .info-new p {
+  color: @white-base;
+}
+.team-block:hover .info-new ul > li > a {
+  background: @white-base;
+}
+.team-block:hover .info-new ul > li > a > i {
+  color: @black-222;
+}
