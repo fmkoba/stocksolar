@@ -1052,7 +1052,7 @@ section > .container-fluid {
   }
 }
 .menuzord-brand img {
-  max-height: 38px;
+  max-height: 50px;
 }
 /* -------- Custom theme style ---------- */
 .header-nav .header-nav-wrapper .menuzord {
@@ -1201,7 +1201,7 @@ section > .container-fluid {
 }
 /* -------- Header White ---------- */
 .header-nav.navbar-white {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #528732;
   border: medium none;
 }
 .header-nav.navbar-white .menuzord {
