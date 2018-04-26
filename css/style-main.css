@@ -1099,7 +1099,7 @@ section > .container-fluid {
 }
 .menuzord-menu > li > a {
   font-size: 14px;
-  color: #333333;
+  color: #fff;
 }
 .menuzord .menuzord-menu > li.active > a i,
 .menuzord .menuzord-menu > li:hover > a i,
